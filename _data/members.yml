@@ -1,11 +1,13 @@
 - name: Mitchell
+  image: mitchell-profile.jpg
   email: "mitchellsmail13.ms@gmail.com"
   instagram: ""
   strava: ""
   garmin: ""
 
 - name: Laura
-  email: ""
+  image: laura-profile.jpg
+  email: "fraserlaura51@gmail.com"
   instagram: ""
   strava: ""
   garmin: ""

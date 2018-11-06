@@ -1,0 +1,35 @@
+{
+  "name": "hiking-blog",
+  "version": "1.0.0",
+  "description": "A blog for our hikes",
+  "main": "index.js",
+  "scripts": {
+    "test": "hello world"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RandyMustache/hiking-blog.git"
+  },
+  "keywords": [
+    "hiking",
+    "blog",
+    "jeykyll",
+    "ruby",
+    "sass",
+    "scss"
+  ],
+  "author": "Mitchell Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RandyMustache/hiking-blog/issues"
+  },
+  "homepage": "https://github.com/RandyMustache/hiking-blog#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "jekyll-posts-generator": "0.0.6"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "requirejs": "^2.3.6"
+  }
+}

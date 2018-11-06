@@ -2,16 +2,22 @@
 layout: default
 ---
 <section class="blog-area">
-    <h1>{{ page.title }}</h1>
-    <div class="main-left">
+    <div class="article-layout__hero">
+        <div class="article-layout__hero-image">
+                {% include image.html name=page.image alt="Laura in the wild" %}
+        </div>
+        <h1>{{ page.title }}</h1>
+    </div>
+
+    <div class="article-layout__main">
         {{content}}
     </div>
-    <div class="sidebar-right"> 
+    <div class="article-layout__sidebar"> 
         <div class= "field-author">
             {% for people in site.data.members %}
                 {% if people.name == page.author %}
                     <h3>{{ people.name }}</h3>
-                    <img src="{{ people.image }}"/>
+                    {% include profile-image.html name=people.image alt="Laura in the wild" %}                    
                 {% endif %}
             {% endfor %}
         </div>
