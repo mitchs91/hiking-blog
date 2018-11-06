@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<section class="blog-area">
+    <h1>{{ page.title }}</h1>
+    <div class="main-left">
+        {{content}}
+    </div>
+    <div class="sidebar-right"> 
+        <div class= "field-author">
+            {% for people in site.data.members %}
+                {% if people.name == page.author %}
+                    <h3>{{ people.name }}</h3>
+                    <img src="{{ people.image }}"/>
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+        <div class="field-details">
+            {% for detail in page.details %}
+                <p id="{{ detail }}">
+                    {{ detail }}
+                </p> 
+            {% endfor %}  
+        
+        </div>
+        
+        <div class="field-gps">
+            {{ page.gps }}
+        </div>
+        
+        <div class="field-raiting">
+            {{page.rating}}
+        </div>
+        
+        <div class="field-distance">
+            {{ page.distance}}
+        </div>
+        
+        <div class="field-strava">
+            {{ page.strava }}
+        </div>
+    </div>
+</section>
