@@ -31,8 +31,6 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
-page_gen-dirs: false
-
 page_gen:
   - data: 'members'
     template: 'authors'
