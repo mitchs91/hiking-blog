@@ -1,9 +1,30 @@
 {% capture imagePath %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
-{% if include.caption %}
-    <figure>
-        <img src="/assets/images/posts/{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
-        <figcaption>{{ include.caption }}</figcaption>
-    </figure>
-{% else %} 
-    <img src="/assets/images/posts/{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
-{% endif %} 
+{% capture imagePathHome %}{{ post.date | date: "%Y-%m-%d" }}-{{ post.title | slugify }}/{{ include.name }}{% endcapture %}
+
+{% if page.url == "/" %}
+    {% if post.image.image.size > 0 %}
+        {% if include.caption %}
+            <figure>
+                <img src="/assets/images/posts/{{ imagePathHome }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
+                <figcaption>{{ include.caption }}</figcaption>
+            </figure>
+        {% else %} 
+            <img src="/assets/images/posts/{{ imagePathHome }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
+        {% endif %}
+    {% else %}
+        <img src="/assets/images/default.png" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
+    {% endif %}
+{% else %}
+    {% if page.image.image.size > 0 %}
+        {% if include.caption %}
+            <figure>
+                <img src="/assets/images/posts/{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
+                <figcaption>{{ include.caption }}</figcaption>
+            </figure>
+        {% else %} 
+            <img src="/assets/images/posts/{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
+        {% endif %} 
+    {% else %}
+        <img src="/assets/images/default.png" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>    
+    {% endif %}
+{% endif %}

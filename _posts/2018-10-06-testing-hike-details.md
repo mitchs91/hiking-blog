@@ -3,7 +3,9 @@ layout: post
 title:  "testing hike details"
 date:   2018-10-06 19:19:18 +1000
 author: Laura
-image: laura.jpg
+image: 
+    image: laura.jpg
+    caption: Laura
 categories: Hiking
 type: Hike
 details: 

@@ -4,6 +4,8 @@ title:
 date:  
 author: 
 image: 
+    image:
+    caption: 
 categories:
 type:
 details: 

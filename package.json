@@ -25,10 +25,15 @@
   },
   "homepage": "https://github.com/RandyMustache/hiking-blog#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
-    "jekyll-posts-generator": "0.0.6"
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-util": "^3.0.8"
   },
   "dependencies": {
+    "gulp-concat": "^2.6.1",
     "jquery": "^3.3.1",
     "requirejs": "^2.3.6"
   }

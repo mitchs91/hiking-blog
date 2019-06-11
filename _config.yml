@@ -44,6 +44,44 @@ defaults:
       layout: "posts"
       author: "Laura"
 
+jekyll_compose:
+  auto_open: true
+  draft_default_front_matter:
+    layout: post
+    author: Laura
+    image: 
+        image: laura.jpg
+        caption: Laura
+    categories: Hiking
+    type: Hike
+    details: 
+        - Toilets  
+        - Parking 
+        - 2WD
+    distance:  
+    rating:  
+    name: 
+    location: 
+    gps:  
+    strava: 
+  post_default_front_matter:
+    layout: post
+    author: Laura
+    image: 
+        image: laura.jpg
+        caption: Laura
+    categories: Hiking
+    type: Hike
+    details: 
+        - Toilets  
+        - Parking 
+        - 2WD
+    distance:  
+    rating: 
+    name: 
+    location: 
+    gps:  
+    strava: 
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
